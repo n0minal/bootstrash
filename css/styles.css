@@ -1,0 +1,37 @@
+body{
+  background: #3F3F3F;
+  margin: 0;
+}
+
+.navbar{
+  height: 80px;
+  background: #f3f3f3;
+}
+
+.icon{
+  font-size: 32px;
+}
+
+.content-wrapper{
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.content{
+  background: linear-gradient(#f3f3f3, #ccc);
+  padding: 10px;
+}
+
+.content-paragraph{
+  text-indent: 32px;
+  padding-top: 30px;
+}
+
+.footer{
+  height: 60px;
+  width: 100%;
+  background: #f3f3f3;
+  position: absolute;
+  bottom: 0;
+}
+
