@@ -7,93 +7,92 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">E-Diligence</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="wrapper">
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <div class="display-block text-center">
-                  <i class="ion ion-home icon"></i>
-                </div>
-                Home
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="display-block text-center">
-                  <i class="ion ion-briefcase icon"></i>
-                </div>
-                Gerências
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+      <div class="wrapper-header">
+        <i class="ion ion-eye d-inline wrapper-icon"></i>
+        <h1 class="wrapper-title d-inline">E-Diligence</h1>
+      </div><!-- end: .wrapper-header -->
+
+      <div class="wrapper-content">
+        <nav class="navbar navbar-expand-md navbar-content p-0">
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="ion ion-navicon"></i>
+          </button>
+
+
+          <div class="collapse navbar-collapse row m-0" id="navbar-mobile">
+            
+            <div class="col-xs-12 col-md-3 navbar-column">
+                <ul class="navbar-nav row m-0">
+                  <div class="col md-12 p-0">
+                    <li class="navbar-item">
+                      <a href="#" class="btn btn-nav"><i class="ion ion-ios-color-filter nav-icon align-middle"></i> <span class="align-middle">Equipes</span></a>
+                    </li>
+                    <li class="navbar-item">
+                      <a href="#" class="btn btn-nav"><i class="ion ion-ios-people nav-icon align-middle"></i> <span class="align-middle">Membros</span></a>
+                    </li>
+                  </div>
+                  <div class="col-md-12 p-0 d-none d-sm-block">
+                    <span class="d-block block-title">Operacional</span>
+                  </div>
+                </ul>
               </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="display-block text-center">
-                  <i class="ion ion-ios-people icon"></i>
-                </div>
-                Equipes
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+
+              <div class="col-xs-12 col-md-3 navbar-column">
+                <ul class="navbar-nav row m-0">
+                  <div class="col md-12 p-0">
+                    <li class="navbar-item">
+                      <a href="#" class="btn btn-nav"><i class="ion ion-ribbon-b nav-icon align-middle"></i> <span class="align-middle">Líderes</span></a>
+                    </li>
+                    <li class="navbar-item">
+                      <a href="#" class="btn btn-nav"><i class="ion ion-ios-briefcase nav-icon align-middle"></i> <span class="align-middle">Gerências</span></a>
+                    </li>
+                  </div>
+                  <div class="col-md-12 p-0 d-none d-sm-block">
+                    <span class="d-block block-title">Administrativo</span>
+                  </div>
+                </ul>
               </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                <div class="display-block text-center">
-                  <i class="ion ion-ios-search-strong icon"></i>
-                </div>
-                Diligências
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+
+              <div class="col-xs-12 col-md-3 navbar-column">
+                <ul class="navbar-nav row m-0">
+                  <div class="col md-12 p-0">
+                    <li class="navbar-item">
+                      <a href="#" class="btn btn-nav"><i class="ion ion-android-search nav-icon align-middle"></i> <span class="align-middle">Diligências</span></a>
+                    </li>
+                    <li class="navbar-item">
+                      <a href="#" class="btn btn-nav"><i class="ion ion-checkmark-round nav-icon align-middle"></i> <span class="align-middle">Resoluções</span></a>
+                    </li>
+                  </div>
+                  <div class="col-md-12 p-0 d-none d-sm-block">
+                    <span class="d-block block-title">Processos</span>
+                  </div>
+                </ul>
               </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                <div class="display-block text-center">
-                  <i class="ion ion-person icon"></i>
-                </div>
-                Leonardo Moura
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+
+              <div class="col-xs-12 col-md-3 navbar-column">
+                <ul class="navbar-nav row m-0">
+                  <div class="col md-12 p-0">
+                    <li class="navbar-item">
+                      <a href="#" class="btn btn-nav"><i class="ion ion-settings nav-icon align-middle"></i> <span class="align-middle">Configurações</span></a>
+                    </li>
+                    <li class="navbar-item">
+                      <a href="#" class="btn btn-nav"><i class="ion ion-log-out nav-icon align-middle"></i> <span class="align-middle">Logout</span></a>
+                    </li>
+                  </div>
+                  <div class="col-md-12 p-0 d-none d-sm-block">
+                    <span class="d-block block-title">Usuário</span>
+                  </div>
+                </ul>
               </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="container">
-      <div class="row content-wrapper">
-        <div class="col-sm-12 content">
-          <h6 class="display-4 text-center">Bem vindo ao E-Diligence!</h6>
-          <p class="lead content-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, earum, quaerat! Possimus, cumque, quos? Minus suscipit esse obcaecati natus distinctio asperiores dolore nam, nemo delectus nostrum. Quibusdam ipsa, eligendi reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eveniet a optio, totam, voluptatem aliquam unde provident, odit velit porro, expedita dolores dolor. Totam incidunt, in placeat nihil ex harum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fugiat voluptate aspernatur, sit ipsa magni adipisci alias pariatur ab commodi doloremque, ipsum, hic in harum provident ducimus. Et, culpa, quo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium odit, ipsa voluptate blanditiis tempore, provident, aliquam est illum sequi temporibus laboriosam quaerat dicta minima! Cum dolorem nemo ut ad harum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex footer align-items-center justify-content-center">
-      <span>&copy; 2018 - UnicadTec by Grupo Unicad</span>
+              </div>
+          </div>
+
+        </nav>
+      </div><!-- end: .wrapper-content -->
+    
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
