@@ -1,0 +1,31 @@
+body{
+	background: #293136;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+.column-box{
+	background: #f3f3f3;
+	margin-top: 80px;
+	padding: 0;
+}
+
+.box-header{
+	background: #1197C7;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.box-content{
+	padding: 20px;
+}
+
+.box-info-title{
+	font-size: 14px;
+}
+
+.btn-box{
+	background: #1197C7;
+	color: #f3f3f3;
+	font-size: 14px;
+}
