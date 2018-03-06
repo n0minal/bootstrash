@@ -37,11 +37,11 @@ body{
 
 .nav-icon{
   font-size: 16px !important;
-  color: #0076A3 !important;
+  color: #3498db !important;
+  margin-right: 2px;
 }
 
 .navbar-item{
-  background: #f3f3f3;
   display:block;
   position: relative;
 }
@@ -55,7 +55,6 @@ body{
 
 
 .content-panel{
-  background: #f3f3f3;
   margin-top: 10px;
   padding: 35px;
 }
@@ -78,6 +77,10 @@ body{
 
 .form-section-title{
   //to-do
+}
+
+.nav-delete, .nav-delete:hover{
+  color: #e74c3c;
 }
 
 input::-webkit-outer-spin-button,
@@ -122,4 +125,49 @@ input::-webkit-inner-spin-button {
     color: #293136;
     text-transform: uppercase;
   }
+}
+
+
+/* Form Control */
+
+.form-control{
+  border-radius: 0;
+  border: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  background: #f3f3f3;
+  color: #000;
+  font-size: 14px;
+} 
+
+.file-input{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.list-group-item{
+  border-radius: 0 !important;
+  background: #f3f3f3;
+}
+
+/* Esconde o input */
+input[type='file'] {
+  z-index: -1;
+}
+
+/* Aparência que terá o seletor de arquivo */
+.label-input-file {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px 20px;
+  font-size: 14px;
+}
+
+.icon-large{
+  font-size: 26px;
 }

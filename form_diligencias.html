@@ -15,9 +15,10 @@
       <div class="wrapper-header">
         <i class="ion ion-eye d-inline wrapper-icon"></i>
         <h1 class="wrapper-title d-inline">E-Diligence</h1>
-      </div
+      </div>
       
       <div class="wrapper-content">
+        
         <nav class="navbar navbar-expand-sm navbar-content p-0">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="ion ion-navicon"></i>
@@ -91,6 +92,7 @@
             </div>
           </div>
         </nav>
+
         <div class="container-fluid">
           <div class="content-panel">
             <h3 class="display-4 content-panel-title text-center">Cadastrar Diligência</h3>
@@ -118,23 +120,18 @@
                   <textarea name="compendio" cols="50" rows="4" class="form-control"></textarea>
                 </div>
                 
-                <div class="form-group col-xs-12 col-sm-12">
-                  
-                  <label for="cluster">Clusters Relacionados</label>
-                  
+                <div class="form-group col-xs-12 col-sm-12">                  
+                  <label for="cluster">Clusters Relacionados</label>                  
                   <div class="row">
-                    <div class="col-xs-12 col-sm-2">
-                      <button class="btn btn-nav">Adicionar Cluster</button>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-10">
-                      <select name="cluster" class="form-control">
+                    <div class="col-xs-12 col-sm-8 my-auto">
+                      <select name="cluster" class="form-control align-middle">
                         <option value="Base Principal">Base Principal</option>
                       </select>
                     </div>
-                    
-                  </div>
-                  
+                    <div class="col-xs-12 col-sm-3 my-auto">
+                      <a class="btn btn-nav ">Adicionar Cluster <i class="ion ion-checkmark-round"></i></a>
+                    </div>                  
+                  </div>                  
                   <ul class="list-group mt-2">                    
                     <li class="list-group-item px-0">                      
                       <div class="row m-0">
@@ -142,30 +139,25 @@
                           <span class="cluster-name">Cluster Exemplo</span>
                         </div>
                         <div class="col-2 text-right">
-                          <a href="#"><i class="ion ion-trash-a"></i></a>
+                          <a href="#" class="nav-delete"><i class="ion ion-trash-a"></i></a>
                         </div>
                       </div>
                     </li>
-                  </ul>
-                  
+                  </ul>                  
                 </div>
 
-                <div class="form-group col-xs-12 col-sm-12">
-                  
-                  <label for="cluster">Gerências</label>
-                  
+                <div class="form-group col-xs-12 col-sm-12">                  
+                  <label for="cluster">Gerências</label>                  
                   <div class="row">
-                    <div class="col-xs-12 col-sm-2">
-                      <button class="btn btn-nav">Adicionar Gerência</button>
-                    </div>
-                    <div class="col-xs-12 col-sm-10">
+                    <div class="col-xs-12 col-sm-8 my-auto">
                       <select name="gerencia" class="form-control">
                         <option value="">Escolha uma gerência</option>
                       </select>
+                    </div>                    
+                    <div class="col-xs-12 col-sm-3 my-auto">
+                      <a class="btn btn-nav">Adicionar Gerência <i class="ion ion-checkmark-round"></i></a>
                     </div>
-                    
-                  </div>
-                  
+                  </div>                  
                   <ul class="list-group mt-2">                    
                     <li class="list-group-item px-0">                      
                       <div class="row m-0">
@@ -173,29 +165,25 @@
                           <span class="cluster-name">Gerência Exemplo</span>
                         </div>
                         <div class="col-2 text-right">
-                          <a href="#"><i class="ion ion-trash-a"></i></a>
+                          <a href="#" class="nav-delete"><i class="ion ion-trash-a"></i></a>
                         </div>
                       </div>
                     </li>
-                  </ul>
-                  
+                  </ul>                  
                 </div>
 
-                <div class="form-group col-xs-12 col-sm-12">
-                  
-                  <label for="cluster">Equipes</label>
-                  
+                <div class="form-group col-xs-12 col-sm-12">                  
+                  <label for="cluster">Equipes</label>                  
                   <div class="row">
-                    <div class="col-xs-12 col-sm-2">
-                      <button class="btn btn-nav align-middle">Adicionar Equipe</button>
-                    </div>
-                    <div class="col-xs-12 col-sm-10">
+                    <div class="col-xs-12 col-sm-8  my-auto">
                       <select name="equipe" class="form-control align-middle">
                         <option value="">Escolha uma equipe</option>
                       </select>
                     </div>
-                  </div>
-                  
+                    <div class="col-xs-12 col-sm-3 my-auto">
+                      <a class="btn btn-nav align-middle">Adicionar Equipe <i class="ion ion-checkmark-round"></i></a>
+                    </div>
+                  </div>                  
                   <ul class="list-group mt-2">                    
                     <li class="list-group-item px-0">                      
                       <div class="row m-0">
@@ -203,31 +191,26 @@
                           <span class="cluster-name">Equipe Exemplo</span>
                         </div>
                         <div class="col-2 text-right">
-                          <a href="#"><i class="ion ion-trash-a"></i></a>
+                          <a href="#" class="nav-delete"><i class="ion ion-trash-a"></i></a>
                         </div>
                       </div>
                     </li>
-                  </ul>
-                  
+                  </ul>                  
                 </div>
-                
-                <hr>
 
                 <div class="form-group col-xs-12 col-sm-12">
                   
                   <label for="cluster">Cenários</label>
                   
                   <div class="row">
-                    <div class="col-xs-12 col-sm-2">
-                      <button class="btn btn-nav">Adicionar Cenário</button>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-10">
+                    <div class="col-xs-12 col-sm-8 my-auto">
                       <select name="cenario" class="form-control">
                         <option value="">Escolha um cenário</option>
                       </select>
                     </div>
-                    
+                    <div class="col-xs-12 col-sm-3 my-auto">
+                      <a class="btn btn-nav">Adicionar Cenário <i class="ion ion-checkmark-round"></i></a>
+                    </div>                    
                   </div>
                   
                   <ul class="list-group mt-2">                    
@@ -237,7 +220,7 @@
                           <span class="cluster-name">Cenário Exemplo</span>
                         </div>
                         <div class="col-2 text-right">
-                          <a href="#"><i class="ion ion-trash-a"></i></a>
+                          <a href="#" class="nav-delete"><i class="ion ion-trash-a"></i></a>
                         </div>
                       </div>
                     </li>
@@ -248,11 +231,15 @@
                 <div class="form-group col-xs-12 col-sm-12">
                   <label for="anexos">Anexos</label>
                   <div class="row">
-                    <div class="col-xs-12 col-sm-2">
-                      <button class="btn btn-nav d-block">Adicionar Anexo</button>
+                    <div class="col-xs-12 col-sm-3 my-auto">
+                      <a class="btn btn-nav d-block">Adicionar Anexo <i class="ion ion-checkmark-round"></i></a>
                     </div>
-                    <div class="col-xs-12 col-sm-10">
-                      <input type="file" class="form-control-file" />
+                    <div class="col-xs-12 col-sm-8 my-auto">
+                      <label class="label-input-file">
+                        <input name="anexo" type="file" class="file-input" />
+                        <span>Selecionar arquivo <i class="ion ion-upload icon-large align-middle"></i></span>
+                      </label>
+                      <input type="text" disabled="disabled"/>
                     </div>
                   </div>
 
@@ -263,7 +250,17 @@
                           <span class="cluster-name">Anexo Exemplo</span>
                         </div>
                         <div class="col-2 text-right">
-                          <a href="#"><i class="ion ion-trash-a"></i></a>
+                          <a href="#" class="nav-delete"><i class="ion ion-trash-a"></i></a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item px-0">                      
+                      <div class="row m-0">
+                        <div class="col-10">
+                          <span class="cluster-name">Anexo Exemplo II</span>
+                        </div>
+                        <div class="col-2 text-right">
+                          <a href="#" class="nav-delete"><i class="ion ion-trash-a"></i></a>
                         </div>
                       </div>
                     </li>
@@ -272,13 +269,13 @@
                 </div>
               </div>
               <div class="text-center">
-                <button class="btn btn-nav">Salvar</button>
-                <button class="btn btn-nav">Cancelar</button>
+                <button type="submit" class="btn btn-nav">Salvar</button>
+                <a href="#" class="btn btn-nav">Cancelar</a>
               </div>
             </form>
           </div>
         </div>
-      </div
+      </div>
       
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
