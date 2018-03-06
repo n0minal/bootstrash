@@ -1,18 +1,16 @@
-.wrapper{
-  background: #111;
-  height: 100%;
-  margin: 0;
+body{
+  background: #fff;
+  font-family: 'Lato', sans-serif;
 }
 
 .wrapper-header{
+  background: #293136;
   padding: 3px;
 }
 
 .wrapper-icon{
-  color: #293136;
-  margin-left: 8px;
-  font-size: 14px;
-  background: #fff;
+  color: #1197C7;
+  font-size: 16px;
   padding: 3px 5px;
   border-radius: 2px;
 }
@@ -23,9 +21,7 @@
 }
 
 .wrapper-content{
-  background: #293136;
-  margin: 5px 10px 0 10px;
-  min-height: 93%;
+  padding-bottom: 15px;
 }
 
 .navbar-content{
@@ -38,7 +34,6 @@
   display: block;
   padding: 0;
 }
-
 
 .nav-icon{
   font-size: 16px !important;
@@ -53,12 +48,44 @@
 
 
 .btn-nav, .btn-nav:hover{
-    font-size: 10px;
-    color: #293136;
-    text-transform: uppercase;
-  }
+  font-size: 10px;
+  color: #293136;
+  text-transform: uppercase;
+}
 
 
+.content-panel{
+  background: #f3f3f3;
+  margin-top: 10px;
+  padding: 35px;
+}
+
+.content-panel-title{
+  font-size: 32px !important;
+}
+
+.wrapper-footer{
+  bottom: 0;
+  background: #f3f3f3;
+  height: 40px;
+  width: 100%;
+}
+
+.footer-title{
+  font-family: 'Lato';
+  font-size: 14px;
+}
+
+.form-section-title{
+  //to-do
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 
 /* non-mobile content (sm and upper) */
 @media (min-width: 576px) {
@@ -78,6 +105,7 @@
     padding: 5px;
     min-height: 80px;
     border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     padding: 15px 0 0 15px;
   }
   
