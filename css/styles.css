@@ -1,5 +1,5 @@
 .wrapper{
-  background: #1197C7;
+  background: #111;
   height: 100%;
   margin: 0;
 }
@@ -34,8 +34,9 @@
 }
 
 .navbar-column{
-  text-align: center;
-  padding: 5px;
+  background: #f3f3f3;
+  position: relative;
+  display: block;
 }
 
 .navbar-column:last-child{
@@ -44,9 +45,13 @@
 
 .nav-icon{
   font-size: 16px !important;
-  color: #1197C7 !important;
+  color: #0076A3 !important;
 }
 
+.navbar-item{
+
+  display:block;
+}
 
 /* non-mobile content (sm and upper) */
 @media (min-width: 576px) {
