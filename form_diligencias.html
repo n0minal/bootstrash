@@ -4,279 +4,267 @@
     <title>E-Diligence</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-   
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/nstyles.css">
   </head>
   <body>
-      
-      <div class="wrapper-header">
-        <i class="ion ion-eye d-inline wrapper-icon"></i>
-        <h1 class="wrapper-title d-inline">E-Diligence</h1>
-      </div>
-      
-      <div class="wrapper-content">
-        
-        <nav class="navbar navbar-expand-sm navbar-content p-0">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="ion ion-navicon"></i>
-          </button>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-sm">
+        <a href="#" class="navbar-brand">E-Diligence</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collisive">
+          <i class="ion-navicon"></i>
+        </button>
+        <div id="nav-collisive" class="navbar-collapse collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item navbar-col">
+              <a href="#" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-android-search"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Diligências</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col -->
+            <li class="nav-item navbar-col">
+              <a href="#" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-ios-people"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Equipes</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col -->
+            <li class="nav-item navbar-col">
+              <a href="#" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-briefcase"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Gerências</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col-->
+            <li class="nav-item navbar-col">
+              <a href="#" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-log-out"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Logout</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col -->
+          </ul> <!-- end: .navbar-nav -->
+        </div> <!-- end: .navbar-collapse collapse -->
+      </nav> <!-- end: .navbar -->
 
+      <div class="container-fluid">
+        <div class="content-panel">
+          <h3 class="display-4 content-panel-title text-center">Cadastrar Diligência</h3>
+          
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="col-12">
+                <span class="text-disabled">Informações Básicas</span>
+                <hr class="mt-1" />
+              </div> <!--  .col-12 -->
 
-          <div class="collapse navbar-collapse row m-0" id="navbar-mobile">
-            
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 navbar-column">
-              <ul class="navbar-nav row m-0">
-                <div class="col-md-12 p-0">
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-cube nav-icon align-middle"></i> <span class="align-middle"> Clusters</span></a>
-                  </li>
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-ios-briefcase nav-icon align-middle"></i> <span class="align-middle">Gerências</span></a>
-                  </li>
-                </div>
-                <div class="col-md-12 p-0 d-none d-sm-block">
-                  <span class="d-block block-title">Administrativo</span>
-                </div>
-              </ul>
-            </div>
+              <div class="form-group col-xs-12 col-sm-6">
+                <label for="titulo">Título</label>
+                <input type="text" name="titulo" class="form-control" />
+              </div>
+              <div class="form-group col-xs-12 col-sm-3">
+                <label for="dt_inicio">Data de Início</label>
+                <input type="date" name="dt_inicio" class="form-control" />
+              </div>
+              <div class="form-group col-xs-12 col-sm-3">
+                <label for="dt_fim">Data de Finalização</label>
+                <input type="date" name="dt_fim" class="form-control" />
+              </div>
+              <div class="form-group col-xs-12 col-sm-12">
+                <label for="objetivo">Objetivo</label>
+                <textarea name="objetivo" cols="50" rows="4" class="form-control"></textarea>
+              </div>
+              <div class="form-group col-xs-12 col-sm-12">
+                <label for="compendio">Compêndio</label>
+                <textarea name="compendio" cols="50" rows="4" class="form-control"></textarea>
+              </div>
+              
+              <div class="col-12">
+                <span class="text-disabled">Clusters Relacionados</span>
+                <hr class="mt-1" />
+              </div> <!--  .col-12 -->
 
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 navbar-column">
-              <ul class="navbar-nav row m-0">
-                <div class="col-md-12 p-0">
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-ios-color-filter nav-icon align-middle"></i> <span class="align-middle">Equipes</span></a>
+              <div class="form-group col-xs-12 col-sm-12">            
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8 my-auto">
+                    <select name="cluster" class="form-control align-middle">
+                      <option value="Base Principal">Base Principal</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-12 col-sm-3 my-auto">
+                    <a class="btn btn-form ">Adicionar Cluster <i class="ion ion-checkmark-round"></i></a>
+                  </div>                  
+                </div>                  
+                <ul class="list-group mt-2">                    
+                  <li class="list-group-item px-0">                      
+                    <div class="row m-0">
+                      <div class="col-10">
+                        <span class="cluster-name">Cluster Exemplo</span>
+                      </div>
+                      <div class="col-2 text-right">
+                        <a href="#"><i class="ion ion-trash-a"></i></a>
+                      </div>
+                    </div>
                   </li>
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-ios-people nav-icon align-middle"></i> <span class="align-middle">Membros</span></a>
-                  </li>
-                </div>
-                <div class="col-md-12 p-0 d-none d-sm-block">
-                  <span class="d-block block-title text-center">Operacional</span>
-                </div>
-              </ul>
-            </div>
+                </ul>                  
+              </div>
 
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 navbar-column">
-              <ul class="navbar-nav row m-0">
-                <div class="col md-12 p-0">
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-android-search nav-icon align-middle"></i> <span class="align-middle">Diligências</span></a>
-                  </li>
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-checkmark-round nav-icon align-middle"></i> <span class="align-middle">Resoluções</span></a>
-                  </li>
-                </div>
-                <div class="col-md-12 p-0 d-none d-sm-block">
-                  <span class="d-block block-title">Processos</span>
-                </div>
-              </ul>
-            </div>
+              <div class="col-12">
+                <span class="text-disabled">Gerências</span>
+                <hr class="mt-1" />
+              </div> <!--  .col-12 -->
 
-            <div class="col-xs-12 col-sm-3 col-md-3 col-xl-3 navbar-column">
-              <ul class="navbar-nav row m-0">
-                <div class="col md-12 p-0">
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-share nav-icon align-middle"></i> <span class="align-middle">Portal UMAIS</span></a>
+              <div class="form-group col-xs-12 col-sm-12">                
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8 my-auto">
+                    <select name="gerencia" class="form-control">
+                      <option value="">Escolha uma gerência</option>
+                    </select>
+                  </div>                    
+                  <div class="col-xs-12 col-sm-3 my-auto">
+                    <a class="btn btn-form">Adicionar Gerência <i class="ion ion-checkmark-round"></i></a>
+                  </div>
+                </div>                  
+                <ul class="list-group mt-2">                    
+                  <li class="list-group-item px-0">                      
+                    <div class="row m-0">
+                      <div class="col-10">
+                        <span class="cluster-name">Gerência Exemplo</span>
+                      </div>
+                      <div class="col-2 text-right">
+                        <a href="#"><i class="ion ion-trash-a"></i></a>
+                      </div>
+                    </div>
                   </li>
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-log-out nav-icon align-middle"></i> <span class="align-middle">Logout</span></a>
-                  </li>
-                </div>
-                <div class="col-md-12 p-0 d-none d-sm-block">
-                  <span class="d-block block-title">Usuário</span>
-                </div>
-              </ul>
-            </div>
-          </div>
-        </nav>
+                </ul>                  
+              </div>
 
-        <div class="container-fluid">
-          <div class="content-panel">
-            <h3 class="display-4 content-panel-title text-center">Cadastrar Diligência</h3>
-            
-            <form action="#" method="POST">
-              <div class="form-row">
-                <div class="form-group col-xs-12 col-sm-6">
-                  <label for="titulo">Título</label>
-                  <input type="text" name="titulo" class="form-control" />
-                </div>
-                <div class="form-group col-xs-12 col-sm-3">
-                  <label for="dt_inicio">Data de Início</label>
-                  <input type="date" name="dt_inicio" class="form-control" />
-                </div>
-                <div class="form-group col-xs-12 col-sm-3">
-                  <label for="dt_fim">Data de Finalização</label>
-                  <input type="date" name="dt_fim" class="form-control" />
-                </div>
-                <div class="form-group col-xs-12 col-sm-12">
-                  <label for="objetivo">Objetivo</label>
-                  <textarea name="objetivo" cols="50" rows="4" class="form-control"></textarea>
-                </div>
-                <div class="form-group col-xs-12 col-sm-12">
-                  <label for="compendio">Compêndio</label>
-                  <textarea name="compendio" cols="50" rows="4" class="form-control"></textarea>
+              <div class="col-12">
+                <span class="text-disabled">Equipes</span>
+                <hr class="mt-1" />
+              </div> <!--  .col-12 -->
+
+              <div class="form-group col-xs-12 col-sm-12">                             
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8  my-auto">
+                    <select name="equipe" class="form-control align-middle">
+                      <option value="">Escolha uma equipe</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-12 col-sm-3 my-auto">
+                    <a class="btn btn-form align-middle">Adicionar Equipe <i class="ion ion-checkmark-round"></i></a>
+                  </div>
+                </div>                  
+                <ul class="list-group mt-2">                    
+                  <li class="list-group-item px-0">                      
+                    <div class="row m-0">
+                      <div class="col-10">
+                        <span class="cluster-name">Equipe Exemplo</span>
+                      </div>
+                      <div class="col-2 text-right">
+                        <a href="#"><i class="ion ion-trash-a"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>                  
+              </div>
+              
+              <div class="col-12">
+                <span class="text-disabled">Cenários</span>
+                <hr class="mt-1" />
+              </div> <!--  .col-12 -->
+
+              <div class="form-group col-xs-12 col-sm-12">
+                                  
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8 my-auto">
+                    <select name="cenario" class="form-control">
+                      <option value="">Escolha um cenário</option>
+                    </select>
+                  </div>
+                  <div class="col-xs-12 col-sm-3 my-auto">
+                    <a class="btn btn-form">Adicionar Cenário <i class="ion ion-checkmark-round"></i></a>
+                  </div>                    
                 </div>
                 
-                <div class="form-group col-xs-12 col-sm-12">                  
-                  <label for="cluster">Clusters Relacionados</label>                  
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-8 my-auto">
-                      <select name="cluster" class="form-control align-middle">
-                        <option value="Base Principal">Base Principal</option>
-                      </select>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 my-auto">
-                      <a class="btn btn-nav ">Adicionar Cluster <i class="ion ion-checkmark-round"></i></a>
-                    </div>                  
-                  </div>                  
-                  <ul class="list-group mt-2">                    
-                    <li class="list-group-item px-0">                      
-                      <div class="row m-0">
-                        <div class="col-10">
-                          <span class="cluster-name">Cluster Exemplo</span>
-                        </div>
-                        <div class="col-2 text-right">
-                          <a href="#" class="nav-delete"><i class="ion ion-trash-a"></i></a>
-                        </div>
+                <ul class="list-group mt-2">                    
+                  <li class="list-group-item px-0">                      
+                    <div class="row m-0">
+                      <div class="col-10">
+                        <span class="cluster-name">Cenário Exemplo</span>
                       </div>
-                    </li>
-                  </ul>                  
-                </div>
-
-                <div class="form-group col-xs-12 col-sm-12">                  
-                  <label for="cluster">Gerências</label>                  
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-8 my-auto">
-                      <select name="gerencia" class="form-control">
-                        <option value="">Escolha uma gerência</option>
-                      </select>
-                    </div>                    
-                    <div class="col-xs-12 col-sm-3 my-auto">
-                      <a class="btn btn-nav">Adicionar Gerência <i class="ion ion-checkmark-round"></i></a>
-                    </div>
-                  </div>                  
-                  <ul class="list-group mt-2">                    
-                    <li class="list-group-item px-0">                      
-                      <div class="row m-0">
-                        <div class="col-10">
-                          <span class="cluster-name">Gerência Exemplo</span>
-                        </div>
-                        <div class="col-2 text-right">
-                          <a href="#" class="nav-delete"><i class="ion ion-trash-a"></i></a>
-                        </div>
+                      <div class="col-2 text-right">
+                        <a href="#"><i class="ion ion-trash-a"></i></a>
                       </div>
-                    </li>
-                  </ul>                  
-                </div>
-
-                <div class="form-group col-xs-12 col-sm-12">                  
-                  <label for="cluster">Equipes</label>                  
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-8  my-auto">
-                      <select name="equipe" class="form-control align-middle">
-                        <option value="">Escolha uma equipe</option>
-                      </select>
                     </div>
-                    <div class="col-xs-12 col-sm-3 my-auto">
-                      <a class="btn btn-nav align-middle">Adicionar Equipe <i class="ion ion-checkmark-round"></i></a>
-                    </div>
-                  </div>                  
-                  <ul class="list-group mt-2">                    
-                    <li class="list-group-item px-0">                      
-                      <div class="row m-0">
-                        <div class="col-10">
-                          <span class="cluster-name">Equipe Exemplo</span>
-                        </div>
-                        <div class="col-2 text-right">
-                          <a href="#" class="nav-delete"><i class="ion ion-trash-a"></i></a>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>                  
-                </div>
-
-                <div class="form-group col-xs-12 col-sm-12">
-                  
-                  <label for="cluster">Cenários</label>
-                  
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-8 my-auto">
-                      <select name="cenario" class="form-control">
-                        <option value="">Escolha um cenário</option>
-                      </select>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 my-auto">
-                      <a class="btn btn-nav">Adicionar Cenário <i class="ion ion-checkmark-round"></i></a>
-                    </div>                    
-                  </div>
-                  
-                  <ul class="list-group mt-2">                    
-                    <li class="list-group-item px-0">                      
-                      <div class="row m-0">
-                        <div class="col-10">
-                          <span class="cluster-name">Cenário Exemplo</span>
-                        </div>
-                        <div class="col-2 text-right">
-                          <a href="#" class="nav-delete"><i class="ion ion-trash-a"></i></a>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  
-                </div>
-                
-                <div class="form-group col-xs-12 col-sm-12">
-                  <label for="anexos">Anexos</label>
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-3 my-auto">
-                      <a class="btn btn-nav d-block">Adicionar Anexo <i class="ion ion-checkmark-round"></i></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-8 my-auto">
-                      <label class="label-input-file">
-                        <input name="anexo" type="file" class="file-input" />
-                        <span>Selecionar arquivo <i class="ion ion-upload icon-large align-middle"></i></span>
-                      </label>
-                      <input type="text" disabled="disabled"/>
-                    </div>
-                  </div>
-
-                  <ul class="list-group mt-2">                    
-                    <li class="list-group-item px-0">                      
-                      <div class="row m-0">
-                        <div class="col-10">
-                          <span class="cluster-name">Anexo Exemplo</span>
-                        </div>
-                        <div class="col-2 text-right">
-                          <a href="#" class="nav-delete"><i class="ion ion-trash-a"></i></a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="list-group-item px-0">                      
-                      <div class="row m-0">
-                        <div class="col-10">
-                          <span class="cluster-name">Anexo Exemplo II</span>
-                        </div>
-                        <div class="col-2 text-right">
-                          <a href="#" class="nav-delete"><i class="ion ion-trash-a"></i></a>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-
-                </div>
+                  </li>
+                </ul>                  
               </div>
-              <div class="text-center">
-                <button type="submit" class="btn btn-nav">Salvar</button>
-                <a href="#" class="btn btn-nav">Cancelar</a>
+              
+              <div class="col-12">
+                <span class="text-disabled">Anexos</span>
+                <hr class="mt-1" />
+              </div> <!--  .col-12 -->
+
+              <div class="form-group col-xs-12 col-sm-12">                  
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 my-auto">
+                    <label class="label-input-file">
+                      <input name="anexo" type="file" class="file-input" />
+                      <span>Selecionar arquivo <i class="ion ion-upload icon-large align-middle"></i></span>
+                    </label>
+                  </div>
+                  <div class="col-xs-12 col-sm-8 my-auto">
+                    <input type="text" class="form-control d-inline" placeholder="Selecione um arquivo para anexar..." readonly/>
+                  </div> <!--  .col-xs-12 col-sm-8 my-auto -->
+                  <div class="col-xs-12 col-sm-3 my-auto">
+                    <a class="btn btn-form">Adicionar Anexo <i class="ion ion-checkmark-round"></i></a>
+                  </div>
+                </div>
+
+                <ul class="list-group mt-2">                    
+                  <li class="list-group-item px-0">                      
+                    <div class="row m-0">
+                      <div class="col-10">
+                        <span class="cluster-name">Anexo Exemplo</span>
+                      </div>
+                      <div class="col-2 text-right">
+                        <a href="#"><i class="ion ion-trash-a"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0">                      
+                    <div class="row m-0">
+                      <div class="col-10">
+                        <span class="cluster-name">Anexo Exemplo II</span>
+                      </div>
+                      <div class="col-2 text-right">
+                        <a href="#"><i class="ion ion-trash-a"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
               </div>
-            </form>
-          </div>
-        </div>
-      </div>
+
+              <div class="col-xs-12 col-sm-6 offset-sm-3 text-center">
+                <button type="submit" class="btn btn-form">Salvar</button>
+                <a href="#" class="btn btn-form">Cancelar</a>
+              </div> <!--  .col-xs-12 col-sm-6 -->
+            </div><!-- end: .form-row -->
+            
+          </form><!-- end: form -->
+        </div><!-- end: .content-panel -->
+      </div><!-- end: .container-fluid -->
       
+      <div class="footer align-items-center justify-content-center p-0">
+        <span class="footer-brand">&copy; 2018 - UnicadTec by Grupo Unicad</span>
+      </div>
+    </div> <!-- end: .wrapper -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>

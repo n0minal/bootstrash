@@ -4,107 +4,74 @@
     <title>E-Diligence</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nstyles.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
   </head>
   <body>
-      <div class="wrapper-header">
-        <i class="ion ion-eye d-inline wrapper-icon align-middle"></i>
-        <h1 class="wrapper-title d-inline align-middle">E-Diligence</h1>
-      </div><!-- end: .wrapper-header -->
-      
-      <div class="wrapper-content">
-        <nav class="navbar navbar-expand-sm navbar-content p-0">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="ion ion-navicon"></i>
-          </button>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-sm">
+        <a href="#" class="navbar-brand">E-Diligence</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collisive">
+          <i class="ion-navicon"></i>
+        </button>
+        <div id="nav-collisive" class="navbar-collapse collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item navbar-col">
+              <a href="#" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-android-search"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Diligências</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col -->
+            <li class="nav-item navbar-col">
+              <a href="#" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-ios-people"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Equipes</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col -->
+            <li class="nav-item navbar-col">
+              <a href="#" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-briefcase"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Gerências</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col-->
+            <li class="nav-item navbar-col">
+              <a href="#" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-log-out"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Logout</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col -->
+          </ul> <!-- end: .navbar-nav -->
+        </div> <!-- end: .navbar-collapse collapse -->
+      </nav> <!-- end: .navbar -->
 
+      <div class="container-fluid">
+        <div class="content-panel">
+          <h3 class="display-4 content-panel-title text-center">Seja bem-vindo ao E-Diligence!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea recusandae similique dignissimos iure magnam tempora voluptatibus deserunt at culpa, minima, sapiente. Quaerat cum aliquid ullam laborum incidunt non cumque.</p>
+          
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sapiente nobis accusantium eaque soluta, facilis eligendi nemo similique omnis voluptates rerum suscipit, officiis minus doloremque officia veritatis! Dolores eum, aliquid!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque inventore, delectus quia facilis tenetur doloribus placeat incidunt rerum porro deleniti perferendis molestias aperiam omnis esse quidem vitae dignissimos, autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fugit, enim voluptas repellendus consequatur dolor molestias reiciendis esse explicabo, alias ipsum magnam officiis, quis adipisci, sapiente nihil molestiae nemo cupiditate.</p>
 
-          <div class="collapse navbar-collapse row m-0" id="navbar-mobile">
-            
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 navbar-column">
-              <ul class="navbar-nav row m-0">
-                <div class="col-md-12 p-0">
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-cube nav-icon align-middle"></i> <span class="align-middle"> Clusters</span></a>
-                  </li>
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-ios-briefcase nav-icon align-middle"></i> <span class="align-middle">Gerências</span></a>
-                  </li>
-                </div>
-                <div class="col-md-12 p-0 d-none d-sm-block">
-                  <span class="d-block block-title">Administrativo</span>
-                </div>
-              </ul>
-            </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae aliquid pariatur fugiat, quaerat minima suscipit laudantium sunt accusantium, doloribus molestias similique dolore obcaecati deleniti ab quod rem numquam expedita saepe!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptas, numquam, totam architecto ex ab? Quibusdam culpa commodi minus quia similique doloribus inventore, asperiores fugit ipsam rerum nisi sunt saepe.</p>
 
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 navbar-column">
-              <ul class="navbar-nav row m-0">
-                <div class="col-md-12 p-0">
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-ios-color-filter nav-icon align-middle"></i> <span class="align-middle">Equipes</span></a>
-                  </li>
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-ios-people nav-icon align-middle"></i> <span class="align-middle">Membros</span></a>
-                  </li>
-                </div>
-                <div class="col-md-12 p-0 d-none d-sm-block">
-                  <span class="d-block block-title text-center">Operacional</span>
-                </div>
-              </ul>
-            </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia, unde ipsum numquam molestias aperiam deleniti nulla omnis magnam, facere fugiat laborum aliquam optio assumenda illo sit blanditiis perferendis praesentium!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur obcaecati dolorem sit, iusto unde, eligendi autem modi eum commodi aspernatur esse distinctio placeat nulla error ipsum quia ducimus nostrum doloribus.</p>
+        </div> <!--  .content-panel -->
+      </div> <!--  .container -->
 
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 navbar-column">
-              <ul class="navbar-nav row m-0">
-                <div class="col md-12 p-0">
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-android-search nav-icon align-middle"></i> <span class="align-middle">Diligências</span></a>
-                  </li>
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-checkmark-round nav-icon align-middle"></i> <span class="align-middle">Resoluções</span></a>
-                  </li>
-                </div>
-                <div class="col-md-12 p-0 d-none d-sm-block">
-                  <span class="d-block block-title">Processos</span>
-                </div>
-              </ul>
-            </div>
-
-            <div class="col-xs-12 col-sm-3 col-md-3 col-xl-3 navbar-column">
-              <ul class="navbar-nav row m-0">
-                <div class="col md-12 p-0">
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-share nav-icon align-middle"></i> <span class="align-middle">Portal UMAIS</span></a>
-                  </li>
-                  <li class="navbar-item">
-                    <a href="#" class="btn btn-nav"><i class="ion ion-log-out nav-icon align-middle"></i> <span class="align-middle">Logout</span></a>
-                  </li>
-                </div>
-                <div class="col-md-12 p-0 d-none d-sm-block">
-                  <span class="d-block block-title">Usuário</span>
-                </div>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <div class="container-fluid">
-          <div class="content-panel">
-            <h3 class="display-4 content-panel-title text-center">Seja bem-vindo ao E-Diligence!</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea recusandae similique dignissimos iure magnam tempora voluptatibus deserunt at culpa, minima, sapiente. Quaerat cum aliquid ullam laborum incidunt non cumque.</p>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sapiente nobis accusantium eaque soluta, facilis eligendi nemo similique omnis voluptates rerum suscipit, officiis minus doloremque officia veritatis! Dolores eum, aliquid!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias doloremque inventore, delectus quia facilis tenetur doloribus placeat incidunt rerum porro deleniti perferendis molestias aperiam omnis esse quidem vitae dignissimos, autem.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fugit, enim voluptas repellendus consequatur dolor molestias reiciendis esse explicabo, alias ipsum magnam officiis, quis adipisci, sapiente nihil molestiae nemo cupiditate.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae aliquid pariatur fugiat, quaerat minima suscipit laudantium sunt accusantium, doloribus molestias similique dolore obcaecati deleniti ab quod rem numquam expedita saepe!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda voluptas, numquam, totam architecto ex ab? Quibusdam culpa commodi minus quia similique doloribus inventore, asperiores fugit ipsam rerum nisi sunt saepe.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quia, unde ipsum numquam molestias aperiam deleniti nulla omnis magnam, facere fugiat laborum aliquam optio assumenda illo sit blanditiis perferendis praesentium!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur obcaecati dolorem sit, iusto unde, eligendi autem modi eum commodi aspernatur esse distinctio placeat nulla error ipsum quia ducimus nostrum doloribus.</p>
-            
-
-          </div> <!--  .content-panel -->
-        </div> <!--  .container-fluid -->
-      </div><!-- end: .wrapper-content -->
+      <div class="footer align-items-center justify-content-center p-0">
+        <span class="footer-brand">&copy; 2018 - UnicadTec by Grupo Unicad</span>
+      </div>
+    </div> <!-- end: .wrapper -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
