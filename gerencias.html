@@ -1,0 +1,157 @@
+<!doctype html5>
+<html>
+  <head>
+    <title>E-Diligence</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/nstyles.css">
+
+   
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-sm">
+        <a href="#" class="navbar-brand">E-Diligence</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collisive">
+          <i class="ion-navicon"></i>
+        </button>
+        <div id="nav-collisive" class="navbar-collapse collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item navbar-col">
+              <a href="index.html" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-ios-home"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Home</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col -->
+            <li class="nav-item navbar-col">
+              <a href="index.html" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-android-search"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Diligências</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col -->
+            <li class="nav-item navbar-col">
+              <a href="equipes.html" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-ios-people"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Equipes</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col -->
+            <li class="nav-item navbar-col">
+              <a href="gerencias.html" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-briefcase"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Gerências</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col-->
+            <li class="nav-item navbar-col">
+              <a href="login.html" class="nav-link">
+                <div class="nav-icon">
+                  <i class="ion-log-out"></i>
+                </div> <!-- end: .nav-icon -->
+                <span class="nav-item-title">Logout</span>
+              </a>
+            </li> <!-- end: .nav-item navbar-col -->
+          </ul> <!-- end: .navbar-nav -->
+        </div> <!-- end: .navbar-collapse collapse -->
+      </nav> <!-- end: .navbar -->
+      
+      <div class="container-fluid">
+        <div class="content-panel">
+          <h3 class="display-4 content-panel-title text-center">Gerências</h3>
+          
+          <div class="row">
+          
+            <div class="col-12 col-sm-8 offset-sm-2">
+              <span class="text-disabled">Buscar Gerência</span>
+              <hr class="mt-1" />
+            </div> <!--  .col-12 -->
+
+            <div class="col-12 col-sm-9 offset-sm-3 mb-3">
+              <a href="form_gerencias.html" class="btn btn-form "><i class="ion-ios-people" style="font-size: 12px;"></i> Criar Nova Gerência</i></a>
+            </div>
+            
+            <div class="col-3 col-sm-2 col-xl-1 offset-sm-3">
+              <label for="titulo">Código</label>
+              <input type="text" name="titulo" class="form-control" />
+            </div>
+
+            <div class="col-6 col-sm-4">
+              <label for="titulo">Palavras-chave</label>
+              <input type="text" name="titulo" class="form-control" />
+            </div>
+
+            <div class="col-3 mt-2 col-sm-3 my-auto">
+              <div class="mt-4">
+                <a href="#" class="btn-search">
+                  <i class="ion-search"></i>
+                </a>
+              </div> <!-- end: .mt-2 -->
+            </div> <!-- end: .col-12 mt-2 col-sm-3 -->
+                 
+            
+            <div class="col-12 col-sm-8 offset-sm-2 mt-2">
+              <span class="text-disabled">Listagem de Gerências</span>
+              <hr class="mt-1" />
+            </div> <!--  .col-12 -->
+            
+            <div class="col-12 col-sm-12">            
+              <div class="row">
+                <div class="col-12 col-sm-6 offset-sm-3">
+                  <ul class="list-group mt-2">                    
+                    <li class="list-group-item">
+                      <div class="row">
+
+                        <div class="col-6 text-left">
+                          <i class="ion-ribbon-b"></i> <span class="list-group-item-title">Código: </span> <span class="list-group-item-description">1</span>
+                        </div> <!-- end: .col-6 -->   
+
+                        <div class="col-6 text-right mb-2">
+                          <a href="#"><i class="ion-edit"></i></a>
+                          <a href="#"><i class="ion-trash-a ml-2"></i></a>
+                        </div> <!--  .col-6 -->
+                        
+                        <div class="col-12">
+                          <div class="d-block">
+                            <i class="ion-ios-book"></i>
+                            <span class="list-group-item-title">Gerência:</span>
+                            <span class="list-group-item-description">Nome exemplo aqui</span>
+                          </div> <!-- end: .d-block -->
+                        </div> <!-- end: .col-6 -->
+
+                        <div class="col-12">
+                          <div class="d-block">
+                            <i class="ion-search"></i>
+                            <span class="list-group-item-title">Diligências:</span>
+                            <span class="list-group-item-description">48942</span>
+                          </div> <!-- end: .d-block -->
+                        </div> <!-- end: .col-12 -->
+                      </div> <!-- end: .row -->
+                    </li>
+                  </ul>   
+                </div> <!--  .col-12 col-sm-6 -->                  
+              </div><!-- end: .row -->             
+            </div>
+            <div class="col-12 col-sm-6 offset-sm-3 text-center mt-3">
+              <button type="submit" class="btn btn-form">Salvar</button>
+              <a href="#" class="btn btn-form">Cancelar</a>
+            </div> <!--  .col-12 col-sm-6 -->
+          </div>
+        </div><!-- content-panel -->
+      </div><!-- container-fluid -->
+
+      <div class="footer align-items-center justify-content-center p-0">
+        <span class="footer-brand">&copy; 2018 - UnicadTec by Grupo Unicad</span>
+      </div>
+    </div> <!-- end: .wrapper -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
