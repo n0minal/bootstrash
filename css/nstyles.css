@@ -203,3 +203,15 @@ input::-webkit-inner-spin-button {
   border-right: 2px solid #ddd;
   padding: 6px 10px;
 }
+
+.table-label{
+  font-size: 12px;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.table-text{
+  font-size: 12px;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}

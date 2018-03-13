@@ -70,29 +70,30 @@
           <form action="#" method="POST">
             <div class="row">
 
-              <div class="col-12 col-sm-10 offset-sm-1">
+              <div class="col-12">
                 <span class="text-disabled">Informações Básicas</span>
                 <hr class="mt-1" />
               </div> <!--  .col-12 -->
 
-              <div class="form-group col-12 col-sm-8 offset-sm-2">
+              <div class="form-group col-12">
                 <label for="titulo">Nome da Equipe</label>
                 <input type="text" name="titulo" class="form-control" />
               </div>          
               
-              <div class="col-12 col-sm-10 offset-sm-1">
+              <div class="col-12">
                 <span class="text-disabled">Membros</span>
                 <hr class="mt-1" />
               </div> <!--  .col-12 -->
               
-              <div class="col-12 col-sm-12">            
+              <div class="col-12">            
                 <div class="row">
-                  <div class="col-12 col-sm-3 offset-sm-2 my-auto">
+                  
+                  <div class="col-12 my-auto">
                     <a class="btn btn-form "><i class="ion-person-add" style="font-size: 12px;"></i> Adicionar Membro</a>
                   </div>
                   
                   <!-- RECORTAR PARA MODAL -->
-                  <div class="col-12 col-sm-8 offset-sm-2 d-block">
+                  <div class="col-12 d-block">
                     <div class="content-block my-3 p-2 form-row">
                       <h5 class="m-auto">Adicionar Membro</h5>
                       <div class="form-group col-12">
@@ -123,31 +124,54 @@
                   </div> <!-- end: .col-12 col-sm-8 offset-sm-2 -->
                   <!-- END: RECORTAR PARA MODAL -->
 
-                  <div class="col-12 col-sm-8 offset-sm-2">
-                    <ul class="list-group mt-2">                    
-                      <li class="list-group-item px-1">                      
+                  <div class="col-12">
+                    <ul class="list-group mt-2">
+                      <!-- table header -->
+                      <li class="list-group-item p-0">
                         <div class="row m-0">
-                          <div class="col-xs-6 col-sm-6">
-                            <i class="ion-ribbon-b"></i> <span>Gerente</span>
-                          </div> <!--  .col-12 col-sm-6 -->
-                          <div class="col-xs-6 col-sm-6 text-right">
+                          <div class="col-12 col-md-3 bg-dark text-white table-label">
+                            Nome
+                          </div> <!-- end: .col-12 col-md-2 bg-dark text-white table-label -->
+                          <div class="col-12 col-md-2 bg-dark text-white table-label">
+                            Telefone
+                          </div> <!-- end: .col-12 col-md-2 bg-dark text-white table-label -->
+                          <div class="col-12 col-md-2 bg-dark text-white table-label">
+                            Celular
+                          </div> <!-- end: .col-12 col-md-2 -->
+                          <div class="col-12 col-md-3 bg-dark text-white table-label">
+                            E-mail
+                          </div> <!-- end: .col-12 col-md-3 bg-dark text-white table-label -->
+                          <div class="col-12 col-md-1 bg-dark text-white table-label">
+                            Função
+                          </div> <!-- end: .col-12 col-md-1 -->
+                          <div class="col-12 col-md-1 bg-dark text-white table-label">
+                            Ações
+                          </div> <!-- end: .col-12 col-md-1 bg-dark text-white table-label -->
+                        </div> <!-- end: .row m-0 -->
+                      </li> <!-- end: .list-group-item px-1 -->
+                       <li class="list-group-item p-0">
+                        <div class="row m-0">
+                          <div class="col-12 col-md-3 table-text">
+                            Leonardo Ferreira Moura dos Santos Silva
+                          </div> <!-- end: .col-12 col-md-2 table-text -->
+                          <div class="col-12 col-md-2 table-text">
+                            (00) 0000-0000
+                          </div> <!-- end: .col-12 col-md-2 table-text -->
+                          <div class="col-12 col-md-2 table-text">
+                            (00) 00000-0000
+                          </div> <!-- end: .col-12 col-md-2 table-text -->
+                          <div class="col-12 col-md-3 table-text">
+                            unicad@unicad.com.br
+                          </div> <!-- end: .col-12 col-md-3 table-text -->
+                          <div class="col-12 col-md-1 table-text">
+                            Gerente
+                          </div> <!-- end: .col-12 col-md-1 table-text -->
+                          <div class="col-12 col-md-1 table-text text-right">
                             <a href="#"><i class="ion-edit"></i></a>
                             <a href="#"><i class="ion-trash-a ml-2"></i></a>
-                          </div> <!--  .col-xs-6 col-sm-6 -->
-                          <div class="col-12 col-sm-12 mt-1">
-                            <i class="ion-person"></i> <span>Leonardo Ferreira Moura dos Santos Silva</span>
-                          </div> <!--  .col-12 col-sm-12 mt-2 -->
-                          <div class="col-12 col-sm-12">
-                            <i class="ion-android-phone-portrait"></i> (00) 0000-0000
-                          </div> <!--  .col-12 col-sm-12 -->
-                          <div class="col-12 col-sm-12">
-                            <i class="ion-ios-telephone"></i> (00) 0000-0000
-                          </div> <!--  .col-12 col-sm-12 -->
-                          <div class="col-12 col-sm-12">
-                            <i class="ion-ios-email d-inline"></i> <span style="word-wrap: break-word;">unicad@unicad.com.br</span>
-                          </div> <!--  .col-12 col-sm-12 -->
-                        </div>
-                      </li>
+                          </div> <!-- end: .col-12 col-md-1 -->
+                        </div> <!-- end: .row m-0 -->
+                      </li> <!-- end: .list-group-item px-1 -->     
                     </ul>   
                   </div> <!--  .col-12 col-sm-6 -->                  
                 </div><!-- end: .row -->             
